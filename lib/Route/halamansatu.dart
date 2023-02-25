@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'halamandua.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -21,25 +22,6 @@ class HomePage extends StatelessWidget {
             Navigator.push(context, route);
           },
           child: Text('Tap Untuk ke AboutPage'),
-        ),
-      ),
-    );
-  }
-}
-
-class AboutPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Tentang Aplikasi'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Kembali'),
         ),
       ),
     );
